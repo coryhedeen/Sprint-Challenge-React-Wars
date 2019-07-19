@@ -1,11 +1,11 @@
 import React from 'react';
-import { Names } from './Styled';
+import { Names, EyeColor } from './Styled';
 
 function Character(props){
   return (
     <div>
       <Names>Name: {props.bio.name}</Names>
-      <div>Eye-color: {props.bio.hair_color}</div>
+      <EyeColor>Eye-color: {props.bio.hair_color}</EyeColor>
     </div>
   )
 }

@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export const Names = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  color: yellow;
+`;
+
+export const EyeColor = styled.div`
+  color: yellow;
 `;
