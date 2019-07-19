@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 export const Names = styled.div`
   display: grid;
-  color: yellow;
+  color: #cbd9e6;
+  font-family: 'Literata', serif;
 `;
 
 export const EyeColor = styled.div`
-  color: yellow;
+  color: #cbd9e6;
+  font-family: 'Literata', serif;
 `;
