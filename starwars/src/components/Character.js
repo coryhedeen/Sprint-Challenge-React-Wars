@@ -1,9 +1,10 @@
 import React from 'react';
+import { Names } from './Styled';
 
 function Character(props){
   return (
     <div>
-      <div>{props.bio}</div>
+      <Names>{props.bio.name}</Names>
     </div>
   )
 }
