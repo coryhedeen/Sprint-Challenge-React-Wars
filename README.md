@@ -25,14 +25,24 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+React JS is a library that allows us to break our application down into self-contained
+components. This way, we can update our App without having to deal with the complex web of
+a javascript application, wherein changing one part of the app may involve changing another
+part of the app.
 - [ ] What does it mean to _think_ in react?
-
+Thinking in React is to think in terms of components. Breaking down the App into discreet
+pieces that link together in a particular order.
 - [ ] Describe state.
-
+State is the part of the app that holds the data that can change. Each component can hold
+a piece of the state.
 - [ ] Describe props.
-
+Props are basically like containers for state data or data from other components.
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+A side effect is anything that happens to the App outside of the scope of the function. UseEffect provides us with the ability to handle side-effects by adding an empty array
+at the end of the function. This way, the function will only fire once. We can sync effects
+to state by adding state to the array at the end of the useEffect function. This way, every
+time state updates the function fires.  
+
 
 ## Project Set Up
 
@@ -60,7 +70,7 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
