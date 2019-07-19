@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import Character from './components/Character';
+import { Names } from './components/Styled';
+import CharMap from './components/CharacterMap';
 
 const App = () => {
   const [star, setStar] = useState([])
@@ -22,7 +24,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <Character bio={star.map(item => item.name)}/>
+      <CharMap data={star}/>
     </div>
   );
 }
